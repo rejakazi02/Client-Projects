@@ -1,0 +1,32 @@
+
+
+html, body {
+
+    
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+@media only screen and (min-width: 60px) {
+    .ttttt {
+        display: none !important;
+        
+    }
+
+    .mobile-menu{
+        display: flex !important;
+        color: black;
+    }
+  }
+@media only screen and (min-width: 1000px) {
+    .dex-menu {
+        display: block !important;
+        display: flex !important;
+    }
+
+    .mobile-menu{
+        display: none !important;
+    }
+  }
