@@ -9,6 +9,19 @@ html, body {
 
 }
 
+
+.img-Sizing {
+    height: 355px !important;
+    width: 100% !important;
+}
+
+
+
+
+
+
+
+
 @media only screen and (min-width: 60px) {
     .ttttt {
         display: none !important;
@@ -19,7 +32,16 @@ html, body {
         display: flex !important;
         color: black;
     }
+    .img-Sizing {
+        height: 200px;
+        width: 100% !important;
+    }
+
   }
+
+
+
+
 @media only screen and (min-width: 1000px) {
     .dex-menu {
         display: block !important;
