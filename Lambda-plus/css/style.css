@@ -8,7 +8,9 @@ html, body {
     padding: 0;
 
 }
-
+ a {
+     text-decoration: none !important;
+ }
 
 .img-Sizing {
     height: 355px !important;
@@ -19,8 +21,8 @@ html, body {
 
 .footerDiv{
 
-    background-color: black;
-    color: white;
+    /* background-color: black; */
+    /* color: white; */
     
 }
 
