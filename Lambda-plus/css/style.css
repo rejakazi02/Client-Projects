@@ -12,10 +12,18 @@ html, body {
      text-decoration: none !important;
  }
 
-.img-Sizing {
-    height: 355px !important;
-    width: 100% !important;
+
+ .navBTN{
+
+    font-weight: 900;
+    font-size: 18px;
+ }
+
+
+.SlideImgSize{
+    height: 360px;
 }
+
 
 /* footer css */
 
@@ -58,6 +66,11 @@ html, body {
     
     padding-left: 19px !important;
    
+}
+
+
+.SlideImgSize{
+    height: 260px;
 }
 
 }
