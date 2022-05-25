@@ -59,7 +59,8 @@ a {
   margin: 10px auto;
   display: flex;
   justify-content: left;
-  /* overflow-x: auto; */
+  overflow-x: hidden;
+  
 }
 
 .SlidSection::~::-webkit-scrollbar{
