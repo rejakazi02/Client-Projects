@@ -45,3 +45,11 @@ for (var i of SlidDivs) {
 }
 
 }
+
+
+
+
+
+// cart icon work 
+
+
