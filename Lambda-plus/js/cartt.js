@@ -28,8 +28,14 @@ let products = [
 for(let i=0; i < carts.length; i++){
     carts[i].addEventListener('click', () => {
 
+    
+        cartNumbers();
+        
+
         
     })
+
+    
 }
 
 function onCartNumbers() {
@@ -53,9 +59,9 @@ function cartNumbers() {
 
     if( productNumbers ) {
         localStorage.setItem('cartNumbers', productNumbers + 1);
-      let p =  document.querySelector('.Cart').textContent = productNumbers + 1;
+      let ppp =  document.querySelector('.Cart').textContent = productNumbers + 1;
    
-    return p;
+    return ppp;
     }
 
     else {
