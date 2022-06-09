@@ -1,3 +1,13 @@
+const shopCart = document.querySelector('#carttt');
+
+let itemNo = localStorage.getItem('cartNumbers');
+
+if(isNaN(parseInt(itemNo))){
+  itemNo = 0;
+  localStorage.setItem('cartNumbers', 0);
+}
+
+shopCart.textContent = itemNo;
 
 let carts = document.querySelectorAll('.add-cart');
 let products = [
@@ -27,61 +37,48 @@ let products = [
 
 for(let i=0; i < carts.length; i++){
     carts[i].addEventListener('click', () => {
-
-    
-        cartNumbers();
-        
-
-        
+        setCartNumbers();
     })
-
-    
 }
 
-function onCartNumbers() {
+// function onCartNumbers() {
+
+//     let productNumbers = localStorage.getItem('cartNumbers');
+
+//     if( productNumbers ) {
+
+//       let pp =  document.querySelector('.Cart').textContent = productNumbers;
+
+//     // return pp;
+//     }
+// }
+
+function setCartNumbers() {
 
     let productNumbers = localStorage.getItem('cartNumbers');
-
-    if( productNumbers ) {
-       
-      let pp =  document.querySelector('.Cart').textContent = productNumbers;
-   
-    // return pp;
-    }
-}
-
-function cartNumbers() {
-
-    let productNumbers = localStorage.getItem('cartNumbers');
-
 
     productNumbers = parseInt(productNumbers);
+    let newProductNumber = productNumbers + 1;
 
     if( productNumbers ) {
-        localStorage.setItem('cartNumbers', productNumbers + 1);
-      let ppp =  document.querySelector('.Cart').textContent = productNumbers + 1;
-   
-    return ppp;
+        localStorage.setItem('cartNumbers', newProductNumber);
+        shopCart.textContent = newProductNumber;
     }
 
     else {
-         localStorage.setItem('cartNumbers', 1);
-            document.querySelector('.Cart').textContent = 1;
-
- 
-        }
-
-  
+        localStorage.setItem('cartNumbers', 1);
+        shopCart.textContent = 1;
+    }
 
 }
 
 
 
-    let p = document.getElementById('carttt');
+    // let p = document.getElementById('carttt');
 
-    p.textContent = cartNumbers();
-    
-
+    // p.textContent = cartNumbers();
 
 
-    onCartNumbers();
+
+    // document.getElementById('carttt').innerText = cartNumbers();
+    // onCartNumbers();
