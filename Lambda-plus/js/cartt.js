@@ -1,4 +1,5 @@
 const shopCart = document.querySelector('#carttt');
+const shopCartt = document.querySelector('#Ccarttt');
 
 let itemNo = localStorage.getItem('cartNumbers');
 
@@ -8,6 +9,7 @@ if(isNaN(parseInt(itemNo))){
 }
 
 shopCart.textContent = itemNo;
+shopCartt.textContent = itemNo;
 
 let carts = document.querySelectorAll('.add-cart');
 let products = [
@@ -41,18 +43,6 @@ for(let i=0; i < carts.length; i++){
     })
 }
 
-// function onCartNumbers() {
-
-//     let productNumbers = localStorage.getItem('cartNumbers');
-
-//     if( productNumbers ) {
-
-//       let pp =  document.querySelector('.Cart').textContent = productNumbers;
-
-//     // return pp;
-//     }
-// }
-
 function setCartNumbers() {
 
     let productNumbers = localStorage.getItem('cartNumbers');
@@ -63,22 +53,16 @@ function setCartNumbers() {
     if( productNumbers ) {
         localStorage.setItem('cartNumbers', newProductNumber);
         shopCart.textContent = newProductNumber;
+        shopCartt.textContent = newProductNumber;
     }
 
     else {
         localStorage.setItem('cartNumbers', 1);
         shopCart.textContent = 1;
+        shopCartt.textContent = 1;
     }
 
 }
 
 
 
-    // let p = document.getElementById('carttt');
-
-    // p.textContent = cartNumbers();
-
-
-
-    // document.getElementById('carttt').innerText = cartNumbers();
-    // onCartNumbers();
