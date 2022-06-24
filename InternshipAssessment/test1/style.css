@@ -1,0 +1,100 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --light-grey: #e0e0e0;
+    --dark-grey: #606060;
+    --red-bg: #da1e5d;
+  
+}
+
+
+#nav{
+    margin: 20px 30px;
+    margin-top: 50px;
+}
+
+.layout{
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: none;
+}
+
+#layoutBtn1 {
+    background-color: #e0e0e0; 
+    color: #606060;
+  }
+  
+  #layoutBtn1:active{
+      background-color: #606060; 
+      color: #C0C0C0;
+  }
+  
+  #layoutBtn1:focus{
+      background-color: #606060; 
+      color: #C0C0C0;
+  }
+
+
+#layoutBtn2 {
+    background-color: #e0e0e0; 
+    color: #606060;
+  }
+  
+  #layoutBtn2:active{
+      background-color: #606060; 
+      color: #C0C0C0;
+  }
+  
+  #layoutBtn2:focus{
+      background-color: #606060; 
+      color: #C0C0C0;
+  }
+
+
+#layoutBtn3 {
+    background-color: #e0e0e0; 
+    color: #606060;
+  }
+  
+  #layoutBtn3:active{
+      background-color: #606060; 
+      color: #C0C0C0;
+  }
+  
+  #layoutBtn3:focus{
+      background-color: #606060; 
+      color: #C0C0C0;
+  }
+
+
+/* 
+  #LayoutBtn2 {
+  background-color: #E0E0E0; color: #606060;
+  }
+  #LayoutBtn3 {
+  background-color: #E0E0E0;
+    color: #606060;
+  } */
+
+/* #container{
+    display: grid; grid-template-rows: repeat(5, 1fr);
+
+
+}
+
+.card{
+    background-color: #da1e5d; margin: 35px; display: flex; align-items: center; justify-content: center; color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}  */
+

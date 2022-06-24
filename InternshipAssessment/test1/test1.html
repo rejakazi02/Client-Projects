@@ -1,0 +1,100 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-end Intern Test 1</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&family=Raleway:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="root"> 
+        <div id="nav">
+            <button class="layout" id="layoutBtn1" onclick="layoutOne()">Layout 1</button>
+            <button class="layout" id="layoutBtn2" onclick="layouTwo()">Layout 2</button>
+            <button class="layout" id="layoutBtn3" onclick="layoutThree()">Layout 3</button>
+        </div>
+        <div id="container" class="con ">
+            <div class="card aaa " id="card1">
+                <h2>Card 1</h2>
+            </div>
+            <div class="card aaa" id="card2">
+                <h2>Card 2</h2>
+            </div>
+            <div class="card aaa" id="card3">
+                <h2>Card 3</h2>
+            </div>
+            <div class="card aaa" id="card4">
+                <h2>Card 4</h2>
+            </div>
+            <div class="card aaa nnnnn" id="card5">
+                <h2>Card 5</h2>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+
+const btnn = document.querySelector("#container").setAttribute("style", "display: grid; grid-template-row: repeat(5, 1fr);"); 
+     document.querySelector("#card1").setAttribute("style", "background-color: #da1e5d; margin: 35px; display: flex; align-items: center; justify-content: center; color: white; border-radius: 10px; width: 90%;height: 100px;"); 
+     document.querySelector("#card2").setAttribute("style", "background-color: #da1e5d; margin: 35px; display: flex; align-items: center; justify-content: center; color: white; border-radius: 10px; width: 90%;height: 100px;"); 
+     document.querySelector("#card3").setAttribute("style", "background-color: #da1e5d; margin: 35px; display: flex; align-items: center; justify-content: center; color: white; border-radius: 10px; width: 90%;height: 100px;"); 
+     document.querySelector("#card4").setAttribute("style", "background-color: #da1e5d; margin: 35px; display: flex; align-items: center; justify-content: center; color: white; border-radius: 10px; width: 90%;height: 100px;"); 
+     document.querySelector("#card5").setAttribute("style", "background-color: #da1e5d; margin: 35px; display: flex; align-items: center; justify-content: center; color: white; border-radius: 10px; width: 90%;height: 100px;"); 
+ 
+
+
+function layoutOne() {
+
+     document.querySelector("#container").setAttribute("style", "display: grid; grid-template-row: repeat(5, 1fr);"); 
+     document.querySelector("#card1").setAttribute("style", "background-color: #da1e5d; margin: 35px; display: flex; align-items: center; justify-content: center; color: white; border-radius: 10px; width: 90%;height: 100px;"); 
+     document.querySelector("#card2").setAttribute("style", "background-color: #da1e5d; margin: 35px; display: flex; align-items: center; justify-content: center; color: white; border-radius: 10px; width: 90%;height: 100px;"); 
+     document.querySelector("#card3").setAttribute("style", "background-color: #da1e5d; margin: 35px; display: flex; align-items: center; justify-content: center; color: white; border-radius: 10px; width: 90%;height: 100px;"); 
+     document.querySelector("#card4").setAttribute("style", "background-color: #da1e5d; margin: 35px; display: flex; align-items: center; justify-content: center; color: white; border-radius: 10px; width: 90%;height: 100px;"); 
+     document.querySelector("#card5").setAttribute("style", "background-color: #da1e5d; margin: 35px; display: flex; align-items: center; justify-content: center; color: white; border-radius: 10px; width: 90%;height: 100px;"); 
+ 
+    }
+
+
+ function layouTwo() {
+   
+    document.querySelector("#container").setAttribute("style", "display: grid; grid-template-columns: repeat(3, 1fr);"); 
+    document.querySelector("#card1").setAttribute("style", "background-color: #da1e5d; margin: 35px; display: flex; align-items: center; justify-content: center; color: white; border-radius: 10px; height: 300px;"); 
+    document.querySelector("#card2").setAttribute("style", "background-color: #da1e5d; margin: 35px; display: flex; align-items: center; justify-content: center; color: white; border-radius: 10px; height: 300px;"); 
+    document.querySelector("#card3").setAttribute("style", "background-color: #da1e5d; margin: 35px; display: flex; align-items: center; justify-content: center; color: white; border-radius: 10px; height: 300px;"); 
+    document.querySelector("#card4").setAttribute("style", "background-color: #da1e5d; margin: 35px; display: flex; align-items: center; justify-content: center; color: white; border-radius: 10px; height: 300px;"); 
+    document.querySelector("#card5").setAttribute("style", "background-color: #da1e5d; margin: 35px; display: flex; align-items: center; justify-content: center; color: white; border-radius: 10px; height: 300px;"); 
+
+ }
+
+
+ function layoutThree() {
+
+    document.querySelector("#container").setAttribute("style", "display: flex;flex-wrap: wrap;"); 
+    document.querySelector("#card1").setAttribute("style", "background-color: #da1e5d; margin: 35px; display: flex; align-items: center; justify-content: center; color: white; border-radius: 10px; width: 100%;height: 100px; ");
+    document.querySelector("#card2").setAttribute("style", "background-color: #da1e5d; margin: 35px; display: grid; grid-template-colums: .3fr; align-items: center; justify-content: center; color: white; border-radius: 10px; width: 15%;height: 280px;"); 
+    document.querySelector("#card3").setAttribute("style", "background-color: #da1e5d; margin: 35px; display: grid; grid-template-colums: .5fr; align-items: center; justify-content: center; color: white; border-radius: 10px; width: 54%;height: 280px;"); 
+    document.querySelector("#card4").setAttribute("style", "background-color: #da1e5d; margin: 35px; display: grid; grid-template-colums: .3fr; align-items: center; justify-content: center; color: white; border-radius: 10px; width: 15%;height: 280px;"); 
+    document.querySelector("#card5").setAttribute("style", "background-color: #da1e5d; margin: 35px; display: flex; align-items: center; justify-content: center; color: white; border-radius: 10px; width: 100%;height: 100px; "); 
+ }
+
+ 
+
+
+
+    </script>
+
+</body>
+
+</html>
